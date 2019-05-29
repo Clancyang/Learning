@@ -46,8 +46,7 @@ int main() {
 			if (last== "Push") {
 				T1[tmp].left = i; 
 			}
-			else if(last=="Pop") {  
-			
+			else if(last=="Pop") {   
 				T1[tmp].right = i;   
 			} 
 			s.push(i);

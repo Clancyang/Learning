@@ -16,9 +16,9 @@ priority_queue<HuffmanTree> MinHeap;
 >构造Huffman树
 ```
 HuffmanTree Huffman(MinHeap H){
-    // int i; HuffmanTree T; 
+    int len = H.size();
     buildMinHeap(H);  
-    for (int i=1;i < H.size();i++){  // 做H.size()-1次合并
+    for (int i=1;i < len;i++){  // 做H.size()-1次合并
         HuffmanTree T = (HuffmanTree)new HuffmanNode();  
         T->left = H.top();  H.pop();
         T->right = H.top(); H.pop();
